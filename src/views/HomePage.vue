@@ -18,13 +18,14 @@
         <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
     </ion-content>
+    <Tabs></Tabs>
   </ion-page>
 </template>
 
-<script lang="ts">
+<script>
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
-
+import Tabs from './Tabs.vue';
 export default defineComponent({
   name: 'HomePage',
   components: {
@@ -32,7 +33,8 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    Tabs
   }
 });
 </script>
@@ -65,4 +67,5 @@ export default defineComponent({
 #container a {
   text-decoration: none;
 }
+
 </style>
